@@ -7,15 +7,15 @@
   <h3 align="center">AstoriaCore 3.3.5a</h3>
 
   <p align="center">
-    Community driven Classless MMO Framework. Proudly founded by Lushen
-and based on AzerothCore and TrinityCore :smile:
+    Community driven Classless MMO Framework. Proudly 
+  founded by Lushen and based on AzerothCore and TrinityCore :smile:
     <br />
     <a href="https://www.azerothcore.org/wiki/home"><strong>Explore the docs (AC) »</strong></a>
     <br />
     <br />
+    <a href="https://github.com/AstoriaCore/AstoriaCore-AC/issues">Report Bug</a>
     ·
-    <a href="#">Report Bug</a>
-    ·
+	<a href="https://github.com/AstoriaCore/AstoriaCore-AC/blob/master/.github/KNOWN_BUGS.md">Known Bugs</a>
   </p>
 </p>
 
@@ -51,10 +51,16 @@ For OpenSSL install the Version you want to use depending on your System Core (x
 ### Clone the Repository
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+
   ```sh
   git clone https://github.com/AstoriaCore/AstoriaCore-AC.git
   ```
+  
+### Download Custom Resources (MANDATORY)
+
+* Database, Patch & LUA Scripts -> https://workupload.com/file/4G2bJ2BzxgK
+
+Password: `AC2021`
 
 ### Installation
 
