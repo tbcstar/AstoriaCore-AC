@@ -26,10 +26,11 @@ these bugs yet, and will not for now. We have paused work on the project for a r
 
 * [LUA] (Classless System): Players can't unlearn Spells after they learned it through the Classless System.
 * [DBC] (Resources): Mana usage is bugged due to a broken Spell.dbc
-* 
 
 ### High
 
 ### Medium
 
 ### Low
+
+* [DBC/DB] (Startequip, Char-Select): The Start Equipment does not show in the Character Creation Screen.
