@@ -14,8 +14,9 @@
     <br />
     <br />
     ·
-    <a href="#">Report Bug</a>
+    <a href="https://github.com/AstoriaCore/AstoriaCore-AC/issues">Report Bug</a>
     ·
+	<a href="#">Known Bugs</a>
   </p>
 </p>
 
