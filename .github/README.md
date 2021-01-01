@@ -7,8 +7,8 @@
   <h3 align="center">AstoriaCore 3.3.5a</h3>
 
   <p align="center">
-    Community driven Classless MMO Framework. Proudly founded by Lushen
-and based on AzerothCore and TrinityCore :smile:
+    Community driven Classless MMO Framework. Proudly 
+  founded by Lushen and based on AzerothCore and TrinityCore :smile:
     <br />
     <a href="https://www.azerothcore.org/wiki/home"><strong>Explore the docs (AC) »</strong></a>
     <br />
