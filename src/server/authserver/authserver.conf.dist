@@ -13,7 +13,7 @@
 ###################################################################################################
 
 ###################################################################################################
-# EXAMPLE CONFIG
+# EXAMPLE CONFIG-示例配置
 #
 #    Variable
 #        Description: Brief description what the variable is doing.
@@ -31,23 +31,23 @@
 # AUTH SERVER SETTINGS
 #
 #    LogsDir
-#        Description: Logs directory setting.
-#        Important:   LogsDir needs to be quoted, as the string might contain space characters.
-#                     Logs directory must exists, or log file creation will be disabled.
-#        Default:     "" - (Log files will be stored in the current path)
+#        描述:日志目录设置。
+#        重要提示:LogsDir需要用引号括起来，因为字符串可能包含空格字符。
+#                     日志目录必须存在，否则将禁用日志文件创建。
+#        Default:     "" - (日志文件将存储在当前路径中)
 
-LogsDir = ""
+LogsDir = "/data/server/log"
 
 #
 #    MaxPingTime
-#        Description: Time (in minutes) between database pings.
+#        描述:数据库ping之间的时间(分钟)。
 #        Default:     30
 
 MaxPingTime = 30
 
 #
 #    RealmServerPort
-#        Description: TCP port to reach the auth server.
+#        说明:连接认证服务器的TCP端口。
 #        Default:     3724
 
 RealmServerPort = 3724
@@ -62,25 +62,25 @@ BindIP = "0.0.0.0"
 
 #
 #    PidFile
-#        Description: Auth server PID file.
+#        说明:认证服务器的PID文件。
 #        Example:     "./authserver.pid"  - (Enabled)
 #        Default:     ""                  - (Disabled)
 
-PidFile = ""
+PidFile = "./authserver.pid"
 
 #
 #    LogLevel
-#        Description: Server console level of logging
+#        描述:服务器控制台级别的日志记录
 #        Default:     0 - (Minimum)
-#                     1 - (Basic)
-#                     2 - (Detail)
+#                     1 - (基本)
+#                     2 - (详细信息)
 #                     3 - (Full/Debug)
 
-LogLevel = 0
+LogLevel = 2
 
 #
 #    LogFile
-#        Description: Log file for main server log.
+#        说明:主服务器日志的日志文件。
 #        Default:     "Auth.log" - (Enabled)
 #                     ""           - (Disabled)
 
@@ -88,15 +88,14 @@ LogFile = "Auth.log"
 
 #
 #    Debug Log Mask
-#        Description: Bitmask that determines which debug log output (level 3)
-#                     will be logged.
+#        描述:位掩码，决定哪些调试日志输出(级别3)将被记录。
 #        Possible flags:
 #
-#                  64 - Anything related to network input/output,
-#                        such as packet handlers and netcode logs
+#                  64 - 任何与网络输入/输出相关的东西，
+#                       比如包处理程序和网络代码日志
 #
-#                       Simply add the values together to create a bitmask.
-#                       For more info see enum DebugLogFilters in Log.h
+#                       只需将这些值相加就可以创建位掩码。
+#                       有关更多信息，请参阅日志.h中的enum DebugLogFilters
 #
 #             Default: 0 (nothing)
 
@@ -104,42 +103,42 @@ DebugLogMask = 64
 
 #
 #    SQLDriverLogFile
-#        Description: Log file for SQL driver events.
+#        描述:SQL驱动程序事件的日志文件。
 #        Example:     "SQLDriver.log" - (Enabled)
 #        Default:      ""             - (Disabled)
 
-SQLDriverLogFile = ""
+SQLDriverLogFile = "SQLDriver.log"
 
 #
 #    SQLDriverQueryLogging
-#        Description: Log SQL queries to the SQLDriverLogFile and console.
+#        说明:日志SQL查询到SQLDriverLogFile和控制台。
 #        Default:     0 - (Disabled, Query errors only)
-#                     1 - (Enabled, Full query logging - may have performance impact)
+#                     1 - (启用，完整查询日志记录-可能会对性能产生影响)
 
 SQLDriverQueryLogging = 0
 
 #
 #    LogTimestamp
-#        Description: Append timestamp to the server log file name.
+#        说明:在服务器日志文件名中添加时间戳。
 #                     Logname_YYYY-MM-DD_HH-MM-SS.Ext for Logname.Ext
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-LogTimestamp = 0
+LogTimestamp = 1
 
 #
 #    LogFileLevel
-#        Description: Server file level of logging
+#        说明:服务器文件级别的日志记录
 #        Default:     0 - (Minimum)
 #                     1 - (Basic)
-#                     2 - (Detail)
+#                     2 - (详细信息)
 #                     3 - (Full/Debug)
 
-LogFileLevel = 0
+LogFileLevel = 2
 
 #
 #    LogColors
-#        Description: Colors for log messages (Format: "normal basic detail debug").
+#        说明:日志信息的颜色(格式:“normal basic detail debug”)。
 #        Colors:      0  - Black
 #                     1  - Red
 #                     2  - Green
@@ -158,11 +157,11 @@ LogFileLevel = 0
 #        Example:     "13 11 9 5" - (Enabled)
 #        Default:     ""          - (Disabled)
 
-LogColors = ""
+LogColors = "13 11 9 5"
 
 #
 #    EnableLogDB
-#        Description: Write log messages to database (LogDatabaseInfo).
+#        说明:向数据库(LogDatabaseInfo)写入日志消息。
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
@@ -170,7 +169,7 @@ EnableLogDB = 0
 
 #
 #    DBLogLevel
-#        Description: Log level of databases logging.
+#        描述:数据库日志的日志级别。
 #        Default:     1 - (Basic)
 #                     0 - (Minimum)
 #                     2 - (Detail)
@@ -180,21 +179,21 @@ DBLogLevel = 1
 
 #
 #    UseProcessors
-#        Description: Processors mask for Windows and Linux based multi-processor systems.
+#        描述:基于Windows和Linux的多处理器系统的处理器掩码。
 #        Example:  For a computer with 3 CPUs:
 #                     1 - 1st CPU only
 #                     2 - 2nd CPU only
 #                     4 - 3rd CPU only
 #                     6 - 2nd + 3rd CPUs, because "2 | 4" -> 6
-#        Default:     0  - (Selected by OS)
+#        Default:     0  - (由操作系统选择)
 #                     1+ - (Bit mask value of selected processors)
 
 UseProcessors = 0
 
 #
 #    ProcessPriority
-#        Description: Process priority setting for Windows and Linux based systems.
-#        Details:     On Linux, a nice value of -15 is used. (requires superuser). On Windows, process is set to HIGH class.
+#        说明:Windows和Linux系统的进程优先级设置。
+#        详细信息:在Linux上，使用了一个很好的值-15。(需要超级用户)。在Windows上，进程设置为高级。
 #        Default:     0 - (Normal)
 #                     1 - (High)
 
@@ -202,7 +201,7 @@ ProcessPriority = 0
 
 #
 #    RealmsStateUpdateDelay
-#        Description: Time (in seconds) between realm list updates.
+#        描述:领域列表更新之间的时间(秒)。
 #        Default:     20 - (Enabled)
 #                     0  - (Disabled)
 
@@ -210,24 +209,23 @@ RealmsStateUpdateDelay = 20
 
 #
 #    WrongPass.MaxCount
-#        Description: Number of login attempts with wrong password before the account or IP will be
-#                     banned.
+#        描述:登录尝试错误的密码之前，帐户或IP将被禁止的次数。
 #        Default:     0  - (Disabled)
 #                     1+ - (Enabled)
 
-WrongPass.MaxCount = 0
+WrongPass.MaxCount = 5
 
 #
 #    WrongPass.BanTime
-#        Description: Time (in seconds) for banning account or IP for invalid login attempts.
-#        Default:     600 - (10 minutes)
+#        时间(秒)禁止帐户或IP无效登录尝试。
+#        Default:     600 - (10 分钟)
 #                     0   - (Permanent ban)
 
 WrongPass.BanTime = 600
 
 #
 #    WrongPass.BanType
-#        Description: Ban type for invalid login attempts.
+#        说明:禁止无效登录尝试的类型。
 #        Default:     0 - (Ban IP)
 #                     1 - (Ban Account)
 
@@ -235,7 +233,7 @@ WrongPass.BanType = 0
 
 #
 #    WrongPass.Logging
-#        Description: Additionally log attempted wrong password logging
+#        说明：另外尝试记录错误的密码
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
@@ -249,7 +247,7 @@ WrongPass.Logging = 0
 # MYSQL SETTINGS
 #
 #    LoginDatabaseInfo
-#        Description: Database connection settings for the realm server.
+#        描述:域服务器的数据库连接设置。
 #        Example:     "hostname;port;username;password;database"
 #                     ".;somenumber;username;password;database" - (Use named pipes on Windows
 #                                                                 "enable-named-pipe" to [mysqld]
@@ -258,19 +256,19 @@ WrongPass.Logging = 0
 #                                                                           Unix/Linux)
 #        Default:     "127.0.0.1;3306;acore;acore;auth"
 
-LoginDatabaseInfo = "127.0.0.1;3306;acore;acore;acore_auth"
+LoginDatabaseInfo = "127.0.0.1;3310;root;A111111a;auth"
 
 #
 #    LoginDatabase.WorkerThreads
-#        Description: The amount of worker threads spawned to handle asynchronous (delayed) MySQL
-#                     statements. Each worker thread is mirrored with its own connection to the
+#        描述:用于处理异步(延迟)MySQL语句的工作线程数量。
+#                     每个工作线程都通过自己的连接镜像到
 #        Default:     1
 
 LoginDatabase.WorkerThreads = 1
 
 #
 #    LoginDatabase.SynchThreads
-#        Description: The amount of MySQL connections spawned to handle.
+#        描述:需要处理的MySQL连接数量。
 #        Default:     1 - (LoginDatabase.WorkerThreads)
 #
 
