@@ -69,7 +69,7 @@ public:
 									continue;
 
 								uint8 slot = pItem->GetSlot();
-								ChatHandler(killed->GetSession()).PSendSysMessage("|cffDA70D6You have lost your |cffffffff|Hitem:%d:0:0:0:0:0:0:0:0|h[%s]|h|r", pItem->GetEntry(), pItem->GetTemplate()->Name1.c_str());
+								ChatHandler(killed->GetSession()).PSendSysMessage("|cffDA70D6你失去了你的 |cffffffff|H物品:%d:0:0:0:0:0:0:0:0|h[%s]|h|r", pItem->GetEntry(), pItem->GetTemplate()->Name1.c_str());
 								LootStoreItem storeItem = LootStoreItem(pItem->GetEntry(), 0, 100, 0, LOOT_MODE_DEFAULT, 0, 1, 1);
 								go->loot.AddItem(storeItem);
 								killed->DestroyItem(INVENTORY_SLOT_BAG_0, slot, true);
@@ -93,11 +93,11 @@ public:
 							continue;
 
 						uint8 slot = pItem->GetSlot();
-						ChatHandler(killed->GetSession()).PSendSysMessage("|cffDA70D6You have lost your |cffffffff|Hitem:%d:0:0:0:0:0:0:0:0|h[%s]|h|r", pItem->GetEntry(), pItem->GetTemplate()->Name1.c_str());
+						ChatHandler(killed->GetSession()).PSendSysMessage("|cffDA70D6你失去了你的 |cffffffff|H物品:%d:0:0:0:0:0:0:0:0|h[%s]|h|r", pItem->GetEntry(), pItem->GetTemplate()->Name1.c_str());
 						LootStoreItem storeItem = LootStoreItem(pItem->GetEntry(), 0, 100, 0, LOOT_MODE_DEFAULT, 0, 1, 1);
 						go->loot.AddItem(storeItem);
 						killed->DestroyItem(INVENTORY_SLOT_BAG_0, slot, true);
-						ChatHandler(killed->GetSession()).PSendSysMessage("|cffDA70D6You have lost your [%s]", pItem->GetTemplate()->Name1.c_str());
+						ChatHandler(killed->GetSession()).PSendSysMessage("|cffDA70D6你失去了你的 [%s]", pItem->GetTemplate()->Name1.c_str());
 						prev = 0;
 						count++;
 						break;
@@ -117,7 +117,7 @@ public:
 							continue;
 
 						uint8 slot = pItem->GetSlot();
-						ChatHandler(killed->GetSession()).PSendSysMessage("|cffDA70D6You have lost your |cffffffff|Hitem:%d:0:0:0:0:0:0:0:0|h[%s]|h|r", pItem->GetEntry(), pItem->GetTemplate()->Name1.c_str());
+						ChatHandler(killed->GetSession()).PSendSysMessage("|cffDA70D6你失去了你的 |cffffffff|H物品:%d:0:0:0:0:0:0:0:0|h[%s]|h|r", pItem->GetEntry(), pItem->GetTemplate()->Name1.c_str());
 						LootStoreItem storeItem = LootStoreItem(pItem->GetEntry(), 0, 100, 0, LOOT_MODE_DEFAULT, 0, 1, 1);
 						go->loot.AddItem(storeItem);
 						killed->DestroyItemCount(pItem->GetEntry(), pItem->GetCount(), true, false);
@@ -142,7 +142,7 @@ public:
 									continue;
 
 								uint8 slot = pItem->GetSlot();
-								ChatHandler(killed->GetSession()).PSendSysMessage("|cffDA70D6You have lost your |cffffffff|Hitem:%d:0:0:0:0:0:0:0:0|h[%s]|h|r", pItem->GetEntry(), pItem->GetTemplate()->Name1.c_str());
+								ChatHandler(killed->GetSession()).PSendSysMessage("|cffDA70D6你失去了你的 |cffffffff|H物品:%d:0:0:0:0:0:0:0:0|h[%s]|h|r", pItem->GetEntry(), pItem->GetTemplate()->Name1.c_str());
 								LootStoreItem storeItem = LootStoreItem(pItem->GetEntry(), 0, 100, 0, LOOT_MODE_DEFAULT, 0, 1, 1);
 								go->loot.AddItem(storeItem);
 								killed->DestroyItemCount(pItem->GetEntry(), pItem->GetCount(), true, false);
